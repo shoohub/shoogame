@@ -41,11 +41,13 @@ def coin_compare(coffee_choice):
     else:
        return False       
 
+
 #お金と原材料を判断し、コーヒーを販売する
 def buy_coffee(coffee_choice):
     if ingredient_compare(coffee_choice) and coin_compare(coffee_choice):
         print(f"Here is your {coffee_choice}")
     else:
         print(f"It is {coffee_ingredient[coffee_choice]['price']},You're short on money.")
+
 
 buy_coffee(coffee_choice)
